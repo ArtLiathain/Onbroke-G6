@@ -4,11 +4,63 @@ GUI _oipEwVnCEe2zb-oDKccEjg {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "NewBiddingArea"
-  DataContext _oirhAFnCEe2zb-oDKccEjg at 10,10 size 180,130 {
+  DataContext _oirhAFnCEe2zb-oDKccEjg at 10,10 size 180,965 {
   	dfViewWorkaround true
+  	ComplexVariable _68Rf4VqxEe22c69LEQEaNA at 10,60 size 160,25 {
+  		expanded false
+  		isLive false
+  		libraryComponentUID "_FSL-oVFNEe2J0bu3ffrh5w"
+  		isInput true
+  		name "bidding"
+  		dfViewWorkaround true
+  		isList true
+  		-ComplexListAttributeConnector-> _nR1sQVsXEe25BLuNIx0EmA  decorate "Ellipse" at (0,0) {
+  			id _nSB5gVsXEe25BLuNIx0EmA
+  			attributeName current
+  		}
+  	}
+  	
+  	PrimitiveVariable _W64RQVrdEe22c69LEQEaNA at 20,910 size 140,25 {
+  		dataType Text
+  		isInput false
+  		name "title"
+  		dfViewWorkaround true
+  		isList false
+  		-FormLoadSubmit-> _geSWoVrcEe22c69LEQEaNA  decorate "" at (0,0) decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _hUHV8FrdEe22c69LEQEaNA
+  		}
+  		
+  		-AddPrimitiveToSubmission-> _XVV1IVrcEe22c69LEQEaNA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _j_W0MFrdEe22c69LEQEaNA
+  		}
+  	}
+  	
+  	ComplexVariable _nR1sQVsXEe25BLuNIx0EmA at 10,210 size 160,25 {
+  		expanded false
+  		isLive false
+  		libraryComponentUID "_FSL-oVFNEe2J0bu3ffrh5w"
+  		isInput false
+  		name "current"
+  		dfViewWorkaround true
+  		isList false
+  		-ComplexAttributeConnector-> _rFDfMFsXEe25BLuNIx0EmA  decorate "Ellipse" at (0,0) {
+  			id _rFKz8VsXEe25BLuNIx0EmA
+  			associationName "features"
+  		}
+  	}
+  	
+  	ComplexVariable _rFDfMFsXEe25BLuNIx0EmA at 10,420 size 160,25 {
+  		expanded false
+  		isLive false
+  		libraryComponentUID "_A6uWQVHpEe2J0bu3ffrh5w"
+  		isInput false
+  		name "features"
+  		dfViewWorkaround true
+  		isList true
+  	}
   }
   
-  Template _oirhAlnCEe2zb-oDKccEjg at 240,10 size 270,230 {
+  Template _oirhAlnCEe2zb-oDKccEjg at 240,10 size 520,1310 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _oisIEFnCEe2zb-oDKccEjg {
@@ -17,7 +69,7 @@ GUI _oipEwVnCEe2zb-oDKccEjg {
   			attributes [  ]
   			marginTop None
   		}
-  	Row _oisIElnCEe2zb-oDKccEjg at 10,30 size 250,170 {
+  	Row _oisIElnCEe2zb-oDKccEjg at 10,30 size 350,230 {
   		generalStyle GeneralStyling _oiwZgFnCEe2zb-oDKccEjg {
   				tallness Fitting
   				marginBottom None
@@ -30,7 +82,7 @@ GUI _oipEwVnCEe2zb-oDKccEjg {
   		MoveDown _oisvI1nCEe2zb-oDKccEjg at 2,10 size 14,7 {
   		}
   		
-  		Col _oitWMVnCEe2zb-oDKccEjg at 10,30 size 220,120 {
+  		Col _oitWMVnCEe2zb-oDKccEjg at 10,30 size 320,180 {
   			wideness Full
   			layout Layout _oivycVnCEe2zb-oDKccEjg {
   					size Default
@@ -49,8 +101,8 @@ GUI _oipEwVnCEe2zb-oDKccEjg {
   			MoveRight _oit9QVnCEe2zb-oDKccEjg at 10,2 size 7,14 {
   			}
   			
-  			Button _lkOWYVnDEe2zb-oDKccEjg at 10,30 size 200,60 {
-  				label "Label"
+  			Button _lkOWYVnDEe2zb-oDKccEjg at 10,90 size 200,60 {
+  				label "Back"
   				styling ButtonStyling _lkSn0FnDEe2zb-oDKccEjg {
   						fullWidth false
   						size Default
@@ -64,7 +116,7 @@ GUI _oipEwVnCEe2zb-oDKccEjg {
   				disabled false
   				icon Icon _lkQyoVnDEe2zb-oDKccEjg {
   						postIcon None
-  						preIcon None
+  						preIcon ArrowLeft
   					}
   				generalStyle GeneralStyling _lkQyoFnDEe2zb-oDKccEjg {
   						tallness Fitting
@@ -77,6 +129,428 @@ GUI _oipEwVnCEe2zb-oDKccEjg {
   				
   				MoveDown _lkQLk1nDEe2zb-oDKccEjg at 2,10 size 14,7 {
   				}
+  			}
+  			
+  			Headline _WouVcVqJEe22c69LEQEaNA at 10,30 size 300,50 {
+  				size Big
+  				content [ StaticContent _Wo-0IFqJEe22c69LEQEaNA {
+  						renderMarkdown false
+  						maxChars 0
+  						html false
+  						rawContent "Create New Bidding"
+  						styling TextStyling _WpApUFqJEe22c69LEQEaNA {
+  								small false
+  								highlight false
+  								deleted false
+  								underline false
+  								bold false
+  								alignment Left
+  								italic false
+  								color Default
+  							}
+  					} ]
+  				generalStyle GeneralStyling _Wo8-8FqJEe22c69LEQEaNA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop Triple
+  						rawContent ""
+  					}
+  				MoveUp _Wo24UVqJEe22c69LEQEaNA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _Wo4GcVqJEe22c69LEQEaNA at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  	}
+  	
+  	Form _XVK2AFrcEe22c69LEQEaNA at 10,270 size 500,1010 {
+  		inline false
+  		generalStyle GeneralStyling _XV9gMFrcEe22c69LEQEaNA {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _XVRjsVrcEe22c69LEQEaNA at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _XVSKwVrcEe22c69LEQEaNA at 2,10 size 14,7 {
+  		}
+  		
+  		Panel _7CixsVqKEe22c69LEQEaNA at 10,100 size 270,390 {
+  			collapsable false
+  			defaultOpen "true"
+  			coloring ComponentColoring _7Cu-8FqKEe22c69LEQEaNA {
+  					color Default
+  				}
+  			generalStyle GeneralStyling _7CrUklqKEe22c69LEQEaNA {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveUp _7CnqMVqKEe22c69LEQEaNA at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _7CrUkVqKEe22c69LEQEaNA at 2,10 size 14,7 {
+  			}
+  			
+  			Row _CexSsVqLEe22c69LEQEaNA at 10,100 size 250,260 {
+  				generalStyle GeneralStyling _Ce_VIFqLEe22c69LEQEaNA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _Ce4ncVqLEe22c69LEQEaNA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _Ce5OgVqLEe22c69LEQEaNA at 2,10 size 14,7 {
+  				}
+  				
+  				Col _Ce7DsVqLEe22c69LEQEaNA at 10,30 size 220,210 {
+  					wideness Full
+  					layout Layout _Ce-HAFqLEe22c69LEQEaNA {
+  							size Default
+  							offset None
+  							alignment Left
+  						}
+  					generalStyle GeneralStyling _Ce844FqLEe22c69LEQEaNA {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveLeft _Ce7qwVqLEe22c69LEQEaNA at 2,2 size 7,14 {
+  					}
+  					
+  					MoveRight _Ce7qw1qLEe22c69LEQEaNA at 10,2 size 7,14 {
+  					}
+  					
+  					Text _FIKW0VqLEe22c69LEQEaNA at 10,30 size 200,60 {
+  						content [ StaticContent _FIV9AFqLEe22c69LEQEaNA {
+  								renderMarkdown false
+  								maxChars 0
+  								html false
+  								rawContent "Add something Here"
+  								styling TextStyling _FIWkEFqLEe22c69LEQEaNA {
+  										small false
+  										highlight false
+  										deleted false
+  										underline false
+  										bold false
+  										alignment Left
+  										italic false
+  										color Default
+  									}
+  							} ]
+  						generalStyle GeneralStyling _FIUH0FqLEe22c69LEQEaNA {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _FISSoVqLEe22c69LEQEaNA at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _FIS5sVqLEe22c69LEQEaNA at 2,10 size 14,7 {
+  						}
+  					}
+  				}
+  			}
+  			
+  			Button _QcCikVr-Ee22c69LEQEaNA at 10,30 size 200,60 {
+  				label "Create new Feature"
+  				styling ButtonStyling _QcMTkFr-Ee22c69LEQEaNA {
+  						fullWidth false
+  						size Default
+  						disabled false
+  						color Lightblue
+  					}
+  				options ButtonOptions _QcOv0Fr-Ee22c69LEQEaNA {
+  						isLink false
+  						submitsForm true
+  					}
+  				disabled false
+  				icon Icon _QcICIFr-Ee22c69LEQEaNA {
+  						postIcon None
+  						preIcon None
+  					}
+  				generalStyle GeneralStyling _QcEXwFr-Ee22c69LEQEaNA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _QcDwsVr-Ee22c69LEQEaNA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _QcDws1r-Ee22c69LEQEaNA at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  		
+  		Panel _Oya1oVqLEe22c69LEQEaNA at 10,500 size 270,300 {
+  			collapsable false
+  			defaultOpen "true"
+  			coloring ComponentColoring _OyixcFqLEe22c69LEQEaNA {
+  					color Default
+  				}
+  			generalStyle GeneralStyling _Oyd48FqLEe22c69LEQEaNA {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveUp _OybcsVqLEe22c69LEQEaNA at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _OydR4VqLEe22c69LEQEaNA at 2,10 size 14,7 {
+  			}
+  			
+  			Row _P5ytYVqLEe22c69LEQEaNA at 10,100 size 250,170 {
+  				generalStyle GeneralStyling _P6B98FqLEe22c69LEQEaNA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _P540AVqLEe22c69LEQEaNA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _P55bEVqLEe22c69LEQEaNA at 2,10 size 14,7 {
+  				}
+  				
+  				Col _P56pMVqLEe22c69LEQEaNA at 10,30 size 220,120 {
+  					wideness Full
+  					layout Layout _P6AIwFqLEe22c69LEQEaNA {
+  							size Default
+  							offset None
+  							alignment Left
+  						}
+  					generalStyle GeneralStyling _P59FcFqLEe22c69LEQEaNA {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveLeft _P58eYFqLEe22c69LEQEaNA at 2,2 size 7,14 {
+  					}
+  					
+  					MoveRight _P58eYlqLEe22c69LEQEaNA at 10,2 size 7,14 {
+  					}
+  					
+  					Text _awQ6sVsaEe25BLuNIx0EmA at 10,30 size 200,60 {
+  						content [ StaticContent _awYPcVsaEe25BLuNIx0EmA {
+  								renderMarkdown false
+  								maxChars 0
+  								html false
+  								rawContent "Add table"
+  								styling TextStyling _awaEoFsaEe25BLuNIx0EmA {
+  										small false
+  										highlight false
+  										deleted false
+  										underline false
+  										bold false
+  										alignment Left
+  										italic false
+  										color Default
+  									}
+  							} ]
+  						generalStyle GeneralStyling _awYPcFsaEe25BLuNIx0EmA {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _awVzMVsaEe25BLuNIx0EmA at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _awWaQVsaEe25BLuNIx0EmA at 2,10 size 14,7 {
+  						}
+  					}
+  				}
+  			}
+  			
+  			Button _RJdXUFsAEe22c69LEQEaNA at 10,30 size 200,60 {
+  				label "Create new Preference"
+  				styling ButtonStyling _RJoWcFsAEe22c69LEQEaNA {
+  						fullWidth false
+  						size Default
+  						disabled false
+  						color Lightblue
+  					}
+  				options ButtonOptions _RJsn4FsAEe22c69LEQEaNA {
+  						isLink false
+  						submitsForm true
+  					}
+  				disabled false
+  				icon Icon _RJjd8FsAEe22c69LEQEaNA {
+  						postIcon None
+  						preIcon None
+  					}
+  				generalStyle GeneralStyling _RJhBsFsAEe22c69LEQEaNA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _RJgaoVsAEe22c69LEQEaNA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _RJgao1sAEe22c69LEQEaNA at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  		
+  		Row _1PjJoVrdEe22c69LEQEaNA at 10,810 size 480,170 {
+  			generalStyle GeneralStyling _1P6WAFrdEe22c69LEQEaNA {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveUp _1PjwsVrdEe22c69LEQEaNA at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _1Pjws1rdEe22c69LEQEaNA at 2,10 size 14,7 {
+  			}
+  			
+  			Col _1Pll4VrdEe22c69LEQEaNA at 10,30 size 220,120 {
+  				wideness Full
+  				layout Layout _1P1dgFrdEe22c69LEQEaNA {
+  						size Default
+  						offset None
+  						alignment Left
+  					}
+  				generalStyle GeneralStyling _1PvW4FrdEe22c69LEQEaNA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _1Pll41rdEe22c69LEQEaNA at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _1PthsVrdEe22c69LEQEaNA at 10,2 size 7,14 {
+  				}
+  				
+  				Button _XVV1IVrcEe22c69LEQEaNA at 10,30 size 200,60 {
+  					label "Submit"
+  					styling ButtonStyling _XVpXIFrcEe22c69LEQEaNA {
+  							fullWidth false
+  							size Default
+  							disabled false
+  							color Green
+  						}
+  					options ButtonOptions _XVtokFrcEe22c69LEQEaNA {
+  							isLink false
+  							submitsForm true
+  						}
+  					disabled false
+  					icon Icon _XVdJ4FrcEe22c69LEQEaNA {
+  							postIcon Check
+  							preIcon None
+  						}
+  					generalStyle GeneralStyling _XVXDQFrcEe22c69LEQEaNA {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveUp _XVWcMVrcEe22c69LEQEaNA at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _XVWcM1rcEe22c69LEQEaNA at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col __lgQ0VrdEe22c69LEQEaNA at 240,30 size 220,120 {
+  				wideness Full
+  				layout Layout __ltsMFrdEe22c69LEQEaNA {
+  						size Default
+  						offset None
+  						alignment Left
+  					}
+  				generalStyle GeneralStyling __lmXcFrdEe22c69LEQEaNA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft __lgQ01rdEe22c69LEQEaNA at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight __ljUIVrdEe22c69LEQEaNA at 10,2 size 7,14 {
+  				}
+  				
+  				Button _BAoyEVreEe22c69LEQEaNA at 10,30 size 200,60 {
+  					label "Cancel"
+  					styling ButtonStyling _BBOn8FreEe22c69LEQEaNA {
+  							fullWidth false
+  							size Default
+  							disabled false
+  							color Red
+  						}
+  					options ButtonOptions _BBUHgFreEe22c69LEQEaNA {
+  							isLink false
+  							submitsForm true
+  						}
+  					disabled false
+  					icon Icon _BAx8AFreEe22c69LEQEaNA {
+  							postIcon Remove
+  							preIcon None
+  						}
+  					generalStyle GeneralStyling _BArOUFreEe22c69LEQEaNA {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveUp _BApZIVreEe22c69LEQEaNA at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _BAqAMVreEe22c69LEQEaNA at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  		}
+  		
+  		Field _geSWoVrcEe22c69LEQEaNA at 10,30 size 200,60 {
+  			maxMB 0
+  			inputType Text
+  			label "Title"
+  			styling FormFieldStyling _gexe0FrcEe22c69LEQEaNA {
+  					size Default
+  					disabled false
+  					color Default
+  				}
+  			additionalOptions FormFieldAdditionalOptions _get0cFrcEe22c69LEQEaNA {
+  					readonly false
+  				}
+  			validation FormFieldValidation _gepjAFrcEe22c69LEQEaNA {
+  					min 0
+  					max -1
+  					required false
+  				}
+  			disabled false
+  			icon Icon _gejcYFrcEe22c69LEQEaNA {
+  					postIcon None
+  					preIcon None
+  				}
+  			generalStyle GeneralStyling _gefyAlrcEe22c69LEQEaNA {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveUp _gefK8VrcEe22c69LEQEaNA at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _gefyAVrcEe22c69LEQEaNA at 2,10 size 14,7 {
   			}
   		}
   	}
